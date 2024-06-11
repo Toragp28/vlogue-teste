@@ -15,6 +15,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* Ajouté pour centrer les éléments horizontalement */
     position: relative;
 }
 
@@ -25,17 +26,28 @@ header .overlay {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 header h1 {
     font-size: 4em;
     margin: 0;
     z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 header p {
     font-size: 1.5em;
     margin: 10px 0 0;
+    z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de l'écran */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centrer l'image */
     z-index: 1;
 }
 
@@ -113,14 +125,4 @@ footer p {
     header p {
         font-size: 1.2em;
     }
-    .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: -1; /* Assurez-vous que la superposition est en arrière-plan */
 }
-}
-
