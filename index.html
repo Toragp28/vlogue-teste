@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <header>
         <div class="overlay"></div>
         <h1>Survival Evolution</h1>
-         <img  class="overlay"  src="OIP.jpg" alt="OIP Image">
+        <img class="overlay" src="OIP.jpg" alt="OIP Image">
         <p>Une aventure épique à travers les âges de l'humanité</p>
         <div class="scroll-down">
             <span>&#x25BC;</span>
         </div>
     </header>
     <main>
-        <section id="description">
+        <section id="description" data-aos="fade-up">
             <h2>Description</h2>
             <p>Survival Evolution est un jeu de survie en monde ouvert qui plonge les joueurs dans une aventure épique à travers les âges de l'humanité. En commençant à l'âge de pierre, les joueurs doivent exploiter les ressources naturelles pour survivre, évoluer technologiquement et atteindre l'ère moderne. Avec des graphismes ultra-réalistes et une attention méticuleuse aux détails, le jeu offre une expérience immersive où chaque décision compte.</p>
         </section>
-        <section id="features">
+        <section id="features" data-aos="fade-up" data-aos-delay="200">
             <h2>Caractéristiques principales</h2>
             <ul>
                 <li><strong>Progression à Travers les Âges :</strong> Commencez à l'âge de pierre et découvrez des technologies majeures pour progresser vers des époques plus avancées. Débloquez des inventions comme l'imprimerie pour franchir des étapes cruciales de l'histoire humaine.</li>
@@ -37,7 +38,7 @@
                 <li><strong>Multijoueur :</strong> Jouez en mode coopératif avec vos amis pour survivre ensemble et partager les tâches. Participez à des modes compétitifs où les joueurs rivalisent pour atteindre des objectifs spécifiques en premier.</li>
             </ul>
         </section>
-        <section id="objectives">
+        <section id="objectives" data-aos="fade-up" data-aos-delay="400">
             <h2>Objectifs du Jeu</h2>
             <ul>
                 <li>Survivre et prospérer dans un monde hostile en utilisant votre ingéniosité et vos compétences.</li>
@@ -45,7 +46,7 @@
                 <li>Créer une civilisation durable en harmonie avec la nature.</li>
             </ul>
         </section>
-        <section id="audience">
+        <section id="audience" data-aos="fade-up" data-aos-delay="600">
             <h2>Public Cible</h2>
             <ul>
                 <li>Les amateurs de jeux de survie, de simulation et d'exploration.</li>
@@ -53,7 +54,7 @@
                 <li>Ceux qui cherchent une expérience de jeu immersive et réaliste.</li>
             </ul>
         </section>
-        <section id="availability">
+        <section id="availability" data-aos="fade-up" data-aos-delay="800">
             <h2>Disponibilité</h2>
             <p>Le jeu sera disponible sur PC avec des versions futures pour consoles et plateformes de réalité virtuelle pour une immersion encore plus profonde.</p>
         </section>
@@ -61,6 +62,9 @@
     <footer>
         <p>Rejoignez-nous dans Survival Evolution et embarquez pour une aventure à travers les âges où chaque décision peut changer le cours de votre histoire !</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
-
