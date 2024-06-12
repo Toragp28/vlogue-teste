@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="vlogue.css">
+    <script defer src="vlogue.js"></script>
 </head>
 <body>
     <header>
         <h1>Bienvenue sur Mon Blog</h1>
     </header>
-    <a href="Home.html">Home</a>
+    <nav>
+        <a href="index.html">Maison</a>
+        <a href="vlogue.html">Vlogue</a>
+        <a href="réso.html">Réseau</a>
+        <a href="tele.html">Télécharger</a>
+    </nav>
     <main>
         <form id="blogForm">
             <label for="title">Titre de l'article:</label>
             <input type="text" id="title" required>
             <label for="content">Contenu de l'article:</label>
             <textarea id="content" required></textarea>
-            <label for="image">URL de l'image:</label>
-            <input type="text" id="image">
+            <label for="imageFile">Télécharger une image:</label>
+            <input type="file" id="imageFile" accept="image/*">
             <button type="submit">Ajouter l'article</button>
         </form>
         <div id="articles"></div>
     </main>
 </body>
-</html>
