@@ -1,3 +1,4 @@
+/* Corps de la page */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,14 +8,17 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: #333;
+    line-height: 1.6;
 }
 
+/* En-tête */
 header {
-    background-color: rgba(76, 175, 80, 0.9); /* Une couleur de fond verte avec transparence */
+    background-color: rgba(76, 175, 80, 0.9); /* Fond vert avec transparence */
     color: #ffffff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -22,13 +26,16 @@ h1 {
     margin: 0;
 }
 
+/* Navigation */
 nav {
     background-color: rgba(76, 175, 80, 0.9);
     padding: 10px 0;
     text-align: center;
-    width: 50%;
+    width: 80%;
+    max-width: 600px;
     margin: 0 auto 20px;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -44,6 +51,7 @@ nav a:hover {
     background-color: #45a049;
 }
 
+/* Contenu principal */
 main {
     max-width: 1000px;
     margin: 20px auto;
@@ -53,6 +61,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Réseau */
 .network {
     margin-bottom: 40px;
 }
@@ -63,7 +72,8 @@ main {
 }
 
 .network img {
-    width: 50%; /* Réduit la taille de l'image par 2 */
+    width: 100%; /* L'image occupe toute la largeur disponible */
+    max-width: 400px; /* Limite la largeur maximale de l'image */
     height: auto;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -76,6 +86,7 @@ main {
     margin-bottom: 20px;
 }
 
+/* Bouton */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -91,3 +102,24 @@ main {
     background-color: #4a58d1; /* Couleur plus foncée au survol */
 }
 
+/* Media Queries pour rendre la page responsive */
+@media (max-width: 768px) {
+    nav {
+        width: 90%;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    .network img {
+        width: 80%;
+        max-width: 300px;
+    }
+}
